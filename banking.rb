@@ -1,4 +1,4 @@
-cd# Программа имитации банковского счета
+# Программа имитации банковского счета
 # Добавить в программу 
 # создание нового счета пользователя,перевод между существующими счетами, база данных пользователей
 
@@ -23,9 +23,9 @@ if check == checking_account.name
               4.Перевод " # todo
         number = gets.chomp
         case number.to_i 
-        when 1 then checking_account.display_balance(1234)
-        when 2 then checking_account.refill(1234)
-        when 3 then checking_account.withdraw(1234)
+        when 1 then checking_account.display_balance(check_pin.to_i)
+        when 2 then checking_account.refill(check_pin.to_i)
+        when 3 then checking_account.withdraw(check_pin.to_i)
         when 4 then puts "Раздел находится в разработке"
         else puts "Вы ввели номер не допустимой операции"
         end
